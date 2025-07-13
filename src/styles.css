@@ -111,12 +111,11 @@ body {
     margin-top: 80px;
     background: var(--primary-gradient);
     color: var(--white);
-    padding: 60px 0;
 }
 
 .swiper {
     width: 100%;
-    height: 500px;
+    max-height: 660px;
 }
 
 .slide-content {
@@ -126,12 +125,19 @@ body {
     justify-content: center;
     text-align: center;
     height: 100%;
-    padding: 0 20px;
 }
 
-.slide-content h1, .slide-content h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
+.desktop-hero {
+    width: 100%;
+}
+
+.text-banner {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    bottom: 6%;
 }
 
 .cta-button {
@@ -147,6 +153,24 @@ body {
 
 .cta-button:hover {
     transform: scale(1.05);
+}
+
+.mobile {
+    display: none;
+}
+
+@media(max-width: 425px) {
+    .desktop-hero {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .text-banner {
+        bottom: 10%;
+    }
 }
 
 /* Sobre Section */
