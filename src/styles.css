@@ -459,6 +459,7 @@ body {
 
     .whatsapp-button.mobile {
         display: flex;
+        z-index: 9999;
     }
 
     .menu-toggle {
